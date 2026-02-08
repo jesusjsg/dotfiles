@@ -86,16 +86,16 @@ export HYPRSHOT_DIR="/home/sortbito/pictures/"
 #
 
 plugins=(
-        aliases
+    aliases
     git
-        archlinux
-        autojump
-        zsh-syntax-highlighting
-        fast-syntax-highlighting
-        zsh-autosuggestions
-        python
-        docker
-        docker-compose
+    archlinux
+    autojump
+    zsh-syntax-highlighting
+    fast-syntax-highlighting
+    zsh-autosuggestions
+    python
+    docker
+    docker-compose
     command-not-found
 )
 
