@@ -1,0 +1,91 @@
+{
+    "edit_predictions": {
+        "provider": "zed"
+    },
+    "agent": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-5-mini"
+        },
+        "default_profile": "ask",
+        "model_parameters": []
+    },
+    "git": {
+        "blame": {
+            "show_avatar": true
+        }
+    },
+    "diagnostics_max_severity": "all",
+    "diagnostics": {
+        "include_warnings": true,
+        "inline": {
+            "enabled": true
+        }
+    },
+    "max_tabs": 4,
+    "tabs": {
+        "file_icons": true
+    },
+    "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false
+    },
+    "search": { "button": false },
+    "base_keymap": "VSCode",
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "colorize_brackets": true,
+    "vim_mode": true,
+    "ui_font_family": "Cascadia Code",
+    "relative_line_numbers": "enabled",
+    "hide_mouse": "on_typing",
+    "icon_theme": "Symbols Icon Theme",
+    "buffer_font_size": 13.0,
+    "project_panel": {
+        "dock": "right"
+    },
+
+    "scrollbar": { "show": "never" },
+    "cursor_blink": false,
+    "theme": {
+        "mode": "dark",
+        "light": "Tokyo Night Light",
+        "dark": "Tokyo Night"
+    },
+    "indent_guides": {
+        "enabled": true,
+        "line_width": 2,
+        "active_line_width": 2
+    },
+    "lsp": {
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    "lineLength": 80,
+                    "lint": {
+                        "extendSelect": ["I"]
+                    }
+                }
+            }
+        }
+    },
+    "tab_bar": {
+        "show_nav_history_buttons": false,
+        "show_tab_bar_buttons": false
+    },
+    "languages": {
+        "PHP": {
+            "language_servers": ["intelephense", "!phpactor", "!phptools"],
+            "format_on_save": "on"
+        },
+        "Python": {
+            "language_servers": ["ty", "!basedpyright", "..."],
+            "code_actions_on_format": {
+                "source.organizeImports.ruff": true
+            },
+            "format_on_save": "on"
+        }
+    }
+}
