@@ -1,5 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  branch = "master",
   lazy = false,
   build = ":TSUpdate",
   dependencies = { "windwp/nvim-autopairs", event = "InsertEnter", config = true },

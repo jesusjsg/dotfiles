@@ -11,5 +11,11 @@ return {
     vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
     vim.keymap.set("n", "<leader>fj", builtin.buffers, { desc = "Telescope buffers" })
     vim.keymap.set("n", "<leader>fb", builtin.git_branches, { desc = "Telescope git branches" })
+
+    vim.keymap.set("n", "<leader>fh", function()
+      builtin.find_files({
+        find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+      })
+    end, { desc = "Telescope hidden files" })
   end,
 }
