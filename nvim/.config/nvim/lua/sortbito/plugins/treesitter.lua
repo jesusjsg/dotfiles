@@ -2,7 +2,6 @@ return {
   "nvim-treesitter/nvim-treesitter",
   lazy = false,
   build = ":TSUpdate",
-  branch = "main",
   dependencies = { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
   config = function()
     require("nvim-treesitter.configs").setup({
@@ -25,7 +24,6 @@ return {
         "python",
         "regex",
         "toml",
-        "jsonc",
       },
       ignore_install = {},
       highlight = {
