@@ -80,3 +80,7 @@ tma() {
         tmux attach -t $1
     fi
 }
+
+tmk() {
+    tmux kill-session -t $1
+}
