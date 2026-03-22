@@ -24,6 +24,7 @@ plugins=(
     docker
     docker-compose
     command-not-found
+    tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -58,3 +59,24 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
+# lazy
+alias lzd="lazydocker"
+alias lzg="lazygit"
+
+# pacman
+alias update="sudo pacman -Syu && flatpak update"
+
+# tmux
+alias t="tmux"
+
+tms() {
+    tmux new-session -s $1
+}
+
+tma() {
+    if [ "$#" -eq 0 ]; then
+        tmux attach
+    else
+        tmux attach -t $1
+    fi
+}
