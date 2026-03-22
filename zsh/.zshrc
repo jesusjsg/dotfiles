@@ -69,11 +69,11 @@ alias update="sudo pacman -Syu && flatpak update"
 # tmux
 alias t="tmux"
 
-tms() {
+ts() {
     tmux new-session -s $1
 }
 
-tma() {
+ta() {
     if [ "$#" -eq 0 ]; then
         tmux attach
     else
@@ -81,6 +81,6 @@ tma() {
     fi
 }
 
-tmk() {
+tk() {
     tmux kill-session -t $1
 }
