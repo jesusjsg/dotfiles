@@ -6,7 +6,7 @@ return {
   dependencies = { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
   config = function()
     require("nvim-treesitter.configs").setup({
-      auto_install = true,
+      auto_install = false,
       modules = {},
       sync_install = false,
       ensure_installed = {
@@ -26,7 +26,7 @@ return {
         "regex",
         "toml",
       },
-      ignore_install = {},
+      ignore_install = { "tmux" },
       highlight = {
         enable = true,
       },
