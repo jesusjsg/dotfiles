@@ -69,6 +69,9 @@ alias update="sudo pacman -Syu && flatpak update"
 # tmux
 alias t="tmux"
 
+# lsd
+alias ls="lsd"
+
 ts() {
     tmux new-session -s $1
 }
