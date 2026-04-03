@@ -87,3 +87,8 @@ ta() {
 tk() {
     tmux kill-session -t $1
 }
+
+tst() {
+    tmux switch-client -t $1
+}
+export SUDO_EDITOR=nvim
