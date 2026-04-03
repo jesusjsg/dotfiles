@@ -9,4 +9,4 @@ configuration {
     drun-display-format: "{name}";
 }
 
-@theme "~/.config/hypr/rofi/tokyo_night.rasi"
+@theme "~/.config/rofi/tokyo_night.rasi"
