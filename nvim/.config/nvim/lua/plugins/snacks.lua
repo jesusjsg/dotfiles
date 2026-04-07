@@ -42,7 +42,7 @@ return {
   },
 
   -- Toggle terminal in normal and terminal mode
-  vim.keymap.set("n", "<C-\\>", function()
+  vim.keymap.set("n", "<leader>t", function()
     Snacks.terminal.toggle()
   end, { desc = "Toggle win terminal" }),
 

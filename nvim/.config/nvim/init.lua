@@ -1,5 +1,6 @@
-require("sortbito.config.options")
-require("sortbito.config.lazy")
+require("config.options")
+require("config.diagnostics")
+require("config.lazy")
 
 local autocmd = vim.api.nvim_create_autocmd
 local augroup = vim.api.nvim_create_augroup

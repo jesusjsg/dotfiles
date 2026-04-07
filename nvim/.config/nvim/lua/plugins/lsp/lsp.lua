@@ -20,12 +20,5 @@ return {
     vim.lsp.config("*", {
       capabilities = require("blink-cmp").get_lsp_capabilities(),
     })
-    vim.diagnostic.config({
-      virtual_text = true,
-      signs = true,
-      update_in_insert = true,
-      severity_sort = true,
-      underline = false,
-    })
   end,
 }
