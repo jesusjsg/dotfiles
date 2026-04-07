@@ -16,8 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    { import = "sortbito.plugins" },
-    { import = "sortbito.plugins.lsp" },
+    { import = "plugins" },
+    { import = "plugins.lsp" },
   },
   checker = {
     enabled = false,
