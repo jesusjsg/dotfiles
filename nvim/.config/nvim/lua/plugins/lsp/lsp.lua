@@ -20,5 +20,14 @@ return {
     vim.lsp.config("*", {
       capabilities = require("blink-cmp").get_lsp_capabilities(),
     })
+    vim.keymap.set("n", "gd", function()
+      vim.lsp.buf.definition()
+    end)
+    vim.keymap.set("n", "H", function()
+      vim.lsp.buf.hover()
+    end)
+    vim.keymap.set("n", "rn", function()
+      vim.lsp.buf.rename()
+    end)
   end,
 }
