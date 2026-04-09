@@ -6,6 +6,18 @@ return {
   dependencies = { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
   config = function()
     local treesitter = require("nvim-treesitter")
-    treesitter.install({ "python", "bash", "lua", "markdown", "javascript", "typescript", "json", "vim" })
+    treesitter.install({
+      "python",
+      "bash",
+      "lua",
+      "markdown",
+      "javascript",
+      "typescript",
+      "json",
+      "vim",
+      "dockerfile",
+      "docker-compose",
+      "yaml",
+    })
   end,
 }
