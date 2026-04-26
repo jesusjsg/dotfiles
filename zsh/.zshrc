@@ -64,13 +64,16 @@ alias lzd="lazydocker"
 alias lzg="lazygit"
 
 # pacman
-alias update="sudo pacman -Syu && flatpak update"
+alias update="sudo pacman -Syu --noconfirm && flatpak update -y"
 
 # tmux
 alias t="tmux"
 
 # lsd
 alias ls="lsd"
+
+# bat
+alias cat="bat"
 
 ts() {
     tmux new-session -s $1
