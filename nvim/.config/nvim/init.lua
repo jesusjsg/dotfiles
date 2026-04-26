@@ -12,17 +12,3 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.treesitter.start()
   end,
 })
-
--- vim.api.nvim_create_autocmd("FileType", {
---   callback = function()
---     vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
---     vim.opt.foldmethod = "expr"
---   end,
--- })
---
--- vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost" }, {
---   pattern = "*",
---   callback = function()
---     vim.cmd("normal! zR")
---   end,
--- })
