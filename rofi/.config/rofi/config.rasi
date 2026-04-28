@@ -1,12 +1,10 @@
 configuration {
     font: "FiraCode Nerd Font";
     modi: "drun,run";
-    //show-icons: true;
-    //icon-theme: "Papirus";
     display-drun: "Apps";
     display-run: "Run";
     hover-select: true;
     drun-display-format: "{name}";
 }
 
-@theme "~/.config/rofi/tokyo_night.rasi"
+@theme "~/.config/rofi/themes/catppuccin-default.rasi"
