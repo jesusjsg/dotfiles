@@ -13,16 +13,20 @@ hl.monitor({
 })
 
 hl.on("hyprland.start", function()
-  hl.exec_cmd("waybar & hyprpaper")
+  hl.exec_cmd("hypridle")
+  hl.exec_cmd("waybar &")
+  hl.exec_cmd("hyprpaper")
 end)
 
 local terminal = "kitty"
+local launcher = "rofi -show drun -config ~/.config/rofi/config.rasi"
+local logout = "pkill -x wlogout || wlogout"
+
+-- Flatpak apps
 local discord = "com.discordapp.Discord"
 local browser = "app.zen_browser.zen"
-local music = "com.Spotify.Client"
 local notes = "md.obsidian.Obsidian"
 local apiClient = "com.usebruno.Bruno"
-local launcher = "rofi -show drun -config ~/.config/rofi/config.rasi"
 
 local mainMod = "SUPER"
 
@@ -31,11 +35,15 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd(notes))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(apiClient))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(discord))
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(music))
 
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(logout))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(launcher))
+
+for i = 1, 5 do
+  hl.workspace_rule({ workspace = tostring(i), monitor = "HDMI-A-2" })
+end
 
 local vimMode = { h = "left", j = "down", k = "up", l = "right" }
 for key, direction in pairs(vimMode) do
