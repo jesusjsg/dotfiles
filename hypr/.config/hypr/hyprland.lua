@@ -36,8 +36,8 @@ hl.bind(mainMod .. " + O", hl.dsp.exec_cmd(notes))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(apiClient))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(discord))
 
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(logout))
-hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(logout))
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(launcher))
 
