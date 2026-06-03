@@ -75,6 +75,9 @@ alias ls="lsd"
 # bat
 alias cat="bat"
 
+# python
+alias venv="source .venv/bin/activate"
+
 ts() {
     tmux new-session -s $1
 }
@@ -95,3 +98,8 @@ tst() {
     tmux switch-client -t $1
 }
 export SUDO_EDITOR=nvim
+
+# opencode
+export PATH=/home/sortbito/.opencode/bin:$PATH
+
+export PATH=$PATH:$(go env GOPATH)/bin
