@@ -9,6 +9,7 @@ return {
     treesitter.install({
       "python",
       "bash",
+      "go",
       "lua",
       "markdown",
       "javascript",
