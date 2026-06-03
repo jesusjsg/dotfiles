@@ -13,6 +13,7 @@ return {
         lua = { "stylua" },
         json = { "biome" },
         jsonc = { "biome" },
+        go = { "gofmt" },
       },
       format_on_save = {
         timeout_ms = 500,
