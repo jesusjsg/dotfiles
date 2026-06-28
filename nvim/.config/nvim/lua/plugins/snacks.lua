@@ -12,7 +12,7 @@ return {
     statuscolumn = { enabled = true },
     lazygit = { enabled = true, win = { width = 0.9, height = 0.9, position = "float" } },
     terminal = {
-      enabled = true,
+      shell = "/bin/zsh",
       win = {
         width = 0.7,
         backdrop = false,
@@ -21,7 +21,6 @@ return {
         style = "terminal",
         position = "float",
       },
-      start_insert = true,
     },
   },
   keys = {
