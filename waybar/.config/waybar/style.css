@@ -75,11 +75,6 @@
     color 0.2s ease-in-out;
 }
 
-/* Simple Hover effect for clock module - BRIGHTER COLOR */
-#clock:hover {
-  background-color: rgba(153, 209, 219, 0.1); /* Brighter highlight */
-}
-
 /* --- Right Modules (Single, Seamless Bar ) --- */
 #pulseaudio,
 #network,
@@ -102,6 +97,11 @@
 #custom-lock:hover,
 #battery:hover {
   background-color: rgb(41, 42, 53);
+}
+
+#network {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 #battery {
