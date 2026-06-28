@@ -1,3 +1,5 @@
+USER=$(whoami)
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -10,14 +12,13 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
-export HYPRSHOT_DIR="/home/sortbito/pictures/"
+export HYPRSHOT_DIR="/home/pictures/ss"
 
 plugins=(
     aliases
     git
     archlinux
     autojump
-    zsh-syntax-highlighting
     fast-syntax-highlighting
     zsh-autosuggestions
     python
@@ -39,7 +40,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # pnpm
-export PNPM_HOME="/home/sortbito/.local/share/pnpm"
+export PNPM_HOME="/home/$USER/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -49,7 +50,7 @@ esac
 . "$HOME/.local/bin/env"
 
 # bun completions
-[ -s "/home/sortbito/.bun/_bun" ] && source "/home/sortbito/.bun/_bun"
+[ -s "/home/$USER/.bun/bin/bun" ] && . "/home/$USER/.bun/bin/bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -100,6 +101,6 @@ tst() {
 export SUDO_EDITOR=nvim
 
 # opencode
-export PATH=/home/sortbito/.opencode/bin:$PATH
+export PATH=/home/$USER/.local/bin:$PATH
 
 export PATH=$PATH:$(go env GOPATH)/bin
