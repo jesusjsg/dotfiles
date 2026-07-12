@@ -7,8 +7,24 @@ require("vim._core.ui2").enable()
 vim.cmd("packadd nvim.undotree")
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "python", "lua", "bash", "vim", "markdown", "markdown_inline", "dockerfile", "yaml", "go" },
+  pattern = {
+    "python",
+    "lua",
+    "bash",
+    "vim",
+    "markdown",
+    "markdown_inline",
+    "dockerfile",
+    "yaml",
+    "go",
+    "typescript",
+    "javascript",
+    "javascriptreact",
+    "tsx",
+    "json",
+  },
   callback = function()
     vim.treesitter.start()
   end,
 })
+vim.treesitter.language.register("tsx", "typescriptreact")

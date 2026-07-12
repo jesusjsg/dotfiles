@@ -9,6 +9,8 @@ return {
       formatters_by_ft = {
         javascript = { "biome", "biome-organize-imports" },
         typescript = { "biome", "biome-organize-imports" },
+        typescriptreact = { "biome", "biome-organize-imports" },
+        javascriptreact = { "biome", "biome-organize-imports" },
         python = { "ruff_format", "ruff_fix", "ruff_organize_imports" },
         lua = { "stylua" },
         json = { "biome" },

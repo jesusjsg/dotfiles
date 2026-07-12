@@ -19,6 +19,9 @@ return {
       "dockerfile",
       "docker-compose",
       "yaml",
+      "tsx",
+      "html",
+      "css",
     })
   end,
 }
