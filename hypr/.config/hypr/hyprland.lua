@@ -27,6 +27,7 @@ local discord = "com.discordapp.Discord"
 local browser = "app.zen_browser.zen"
 local notes = "md.obsidian.Obsidian"
 local apiClient = "com.usebruno.Bruno"
+local passwordManager = "org.keepassxc.KeePassXC"
 
 local mainMod = "SUPER"
 
@@ -35,6 +36,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd(notes))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(apiClient))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(discord))
+hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(passwordManager))
 
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(logout))
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.close())
