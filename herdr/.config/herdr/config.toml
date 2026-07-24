@@ -1,0 +1,23 @@
+onboarding = false
+
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[terminal]
+default_shell = "/bin/zsh"
+shell_mode = "auto"
+new_cwd = "follow"
+
+[keys]
+prefix = "ctrl+s"
+new_tab = "prefix+n"
+next_tab = "prefix+o"
+open_notification_target = "prefix+shift+o"
+
+[ui]
+sidebar_start_collapsed = true
+
+[experimental]
+kitty_graphics = true
+pane_history = false
