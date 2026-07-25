@@ -6,10 +6,23 @@ return {
 
     opts = {
       keymap = { preset = "enter" },
+      sources = {
+        default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+        providers = {
+          lazydev = {
+            name = "LazyDev",
+            module = "lazydev.integrations.blink",
+          },
+        },
+      },
       appearance = {
         nerd_font_variant = "mono",
+        use_nvim_cmp_as_default = true,
       },
       completion = {
+        documentation = {
+          auto_show = false,
+        },
         accept = {
           auto_brackets = {
             enabled = true,

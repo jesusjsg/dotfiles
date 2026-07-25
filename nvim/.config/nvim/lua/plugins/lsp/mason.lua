@@ -1,7 +1,7 @@
 return {
   "mason-org/mason-lspconfig.nvim",
   opts = {
-    ensure_installed = { "lua_ls", "ty", "ruff", "stylua", "biome" },
+    ensure_installed = { "lua_ls", "ty", "ruff", "stylua", "biome", "gopls" },
   },
   dependencies = {
     {
