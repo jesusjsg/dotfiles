@@ -79,6 +79,9 @@ alias cat="bat"
 # python
 alias venv="source .venv/bin/activate"
 
+# herdr
+alias er="herdr"
+
 ts() {
     tmux new-session -s $1
 }
@@ -98,6 +101,7 @@ tk() {
 tst() {
     tmux switch-client -t $1
 }
+
 export SUDO_EDITOR=nvim
 
 # opencode
